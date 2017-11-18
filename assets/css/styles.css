@@ -46,11 +46,13 @@ body {
 }
 
 form {
-	width: ;
 	text-align: center;
 	color: #fff;
 	padding-top: 85px;
-	text-shadow: 0.1em 0.1em 0.05em black}
+	text-shadow: 0.1em 0.1em 0.05em black;
+	font-size: 25px;
+}
+
 
 .submit {
 	text-align: center;
@@ -62,4 +64,20 @@ form {
 	padding-bottom: 10px;
 }
 
+@media screen and (max-width: 980px) {
+  body {
+    background-image: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+
+
+@media screen and (max-width: 640px) {
+  body {
+    background-image: none;
+  }
 
