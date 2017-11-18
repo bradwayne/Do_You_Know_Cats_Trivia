@@ -1,14 +1,5 @@
 
 
-
-
-
-
-
-      
-
-
-
 function handleClick()
   {         
 
