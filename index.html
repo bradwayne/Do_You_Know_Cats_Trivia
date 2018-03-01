@@ -2,25 +2,37 @@
 <html>
 
 <head>
-    <title>Trivia Game</title>
+    <title>Cat Trivia Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <!-- css reset links -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Ewert|Frijole|Sancreek" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Nothing+You+Could+Do" rel="stylesheet">
-    <!-- 	font-family: 'Give You Glory', cursive;	font-size: 50px; -->
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="background-image">
+            </div>
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+
+
     <header>
         <h1 class="head-box">
-					<p class="headline">
-						Do You Know 'Cats' Trivia Game!
-					</p>
-		</h1>
+            <p class="headline">
+                Do You Know 'Cats' Trivia Game!
+            </p>
+        </h1>
     </header>
     <br>
     <div class="container">
@@ -28,167 +40,18 @@
             <div class="background-image">
             </div>
             <div class="col-md-12">
-               
-
-                <form>
-                    <br>
-                    <div class="question"> <strong>Which brain is a cat's brain most similar to?</strong></div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question1" value="correct"> Human's </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question1" value="wrong"> Dog's </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> A term for a group of cats? </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question2" value="wrong"> Caggle </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question2" value="correct"> Clowder </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question2" value="wrong"> Covey </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question2" value="wrong"> Clutch </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> A cat has how many whiskers, on average? </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question3" value="wrong"> 16 </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question3" value="wrong"> 12 </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question3" value="wrong"> 8 </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question3" value="correct"> 24 </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> Do cats have fewer or more teeth than dogs? </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question4" value="wrong"> The same </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question4" value="wrong"> More </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question4" value="correct"> Fewer </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> The thick hair around the face of some cats (such as Persians) is called: </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question5" value="wrong"> Mane </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question5" value="wrong"> Shock </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question5" value="correct"> Ruff </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question5" value="wrong"> Pelt </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> What is it called when a cat rubs the side of its head on you or on furniture? </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question6" value="correct"> Bunting </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question6" value="wrong"> Beaning </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question6" value="wrong"> Brocking </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question6" value="wrong"> Tagging </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> Outdoor-only cats live, on average, about: </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question7" value="wrong"> 7 to 10 years </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question7" value="correct"> 3 - 5 years </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question7" value="wrong"> 12 - 15 years </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> A term for a group of kittens is: </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question8" value="wrong"> Nook </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question8" value="wrong"> Kaggle </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question8" value="wrong"> Kaboodle </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question8" value="correct"> Kindle </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> A cat, standing in a still position, can jump how many times its own height? </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question9" value="wrong"> 4 </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question9" value="correct"> 6 </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question9" value="wrong"> 2 </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question9" value="wrong"> 8 </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> 'Tabby' is the name of a breed. </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question10" value="correct"> False </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question10" value="wrong"> True </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> All of the following are the names of cat breeds, except: </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question11" value="wrong"> Birman </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question11" value="correct"> Beauceron </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question11" value="wrong"> Balinese </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question11" value="wrong"> Burmilla </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> Like dogs, cats sniff one another's butts. </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question12" value="correct"> True </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question12" value="wrong"> False </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> Cats can't taste this: </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question13" value="wrong"> Bitter </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question13" value="wrong"> Sour </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question13" value="wrong"> Salt </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question13" value="correct"> Sweet </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> What is the total number of claws that most house cats have? </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question14" value="correct"> 18 </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question14" value="wrong"> 16 </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question14" value="wrong"> 20 </label><a> | </a>
-                    <label><input id="answer" type="radio" name="question14" value="wrong"> None of the Above </label>
-                    <br>
-                    <br>
-                    <div class="spacer">--------------------------------</div>
-                    <br>
-                    <div class="question"> Which of the following statements about body language is FALSE? </div>
-                    <br>
-                    <label><input id="answer" type="radio" name="question15" value="correct"> A tail tucked underneath the body means "I'm hungery." </label>
-                    <br>
-                    <br>
-                    <label><input id="answer" type="radio" name="question15" value="wrong"> A twitching tail means "I'm getting irritated." </label>
-                    <br>
-                    <br>
-                    <label><input id="answer" type="radio" name="question15" value="wrong"> A thumping tail means "I'm totally frustrated!" </label>
-                    <br>
-                    <br>
-                    <label><input id="answer" type="radio" name="question15" value="wrong"> A cat's tail held high means "I'm happy." </label>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
-                </form>
+                <div id="sub-wrapper">
+                    <div id="quiz-area">
+                        <button class="btn" id="start">Start</button>
+                    </div>
+                </div>
             </div>
-         
-            
         </div>
     </div>
+
+
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 
 </html>
