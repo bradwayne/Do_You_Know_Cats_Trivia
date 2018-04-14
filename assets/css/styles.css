@@ -18,7 +18,7 @@ body {
 .background-image {
     position: fixed;
     background-image: url(..//images/catmoon.jpg);
-    background-size: 960px;
+    background-size: 980px;
     height: 600px;
     width: 960px;
     margin-top: -20px;
@@ -28,7 +28,7 @@ body {
 .head-box {
     position: fixed;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: #a01d06;
     padding-bottom: 8px;
     padding-top: 22px;
@@ -124,4 +124,19 @@ h3 {
 
 button:hover {
     background: #a01d06;
+}
+
+a#navAudio {
+    margin-top: -30px;
+    margin-right: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+#audio_on {
+    display: inline;
+}
+
+#audio_mute {
+    display: none;
 }

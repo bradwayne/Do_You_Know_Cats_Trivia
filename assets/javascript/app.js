@@ -1,3 +1,27 @@
+var backgroundMusic = new Audio("assets/audio/havana_cover_by_cats.m4a");
+
+function pauseAudio() {
+    if (document.getElementById("navAudio").classList.contains('play')) {
+        document.getElementById("navAudio").classList.add('mute');
+        document.getElementById("navAudio").classList.remove('play');
+        document.getElementById("audio_on").style.display = "none";
+        document.getElementById("audio_mute").style.display = "inline";
+        backgroundMusic.pause();
+        backgroundMusic.currentTime = 0;
+    } else if (document.getElementById("navAudio").classList.contains('mute')) {
+        document.getElementById("navAudio").classList.add('play');
+        document.getElementById("navAudio").classList.remove('mute');
+        document.getElementById("audio_on").style.display = "inline";
+        document.getElementById("audio_mute").style.display = "none";
+        backgroundMusic.play();
+    }
+}
+backgroundMusic.addEventListener('ended', function () {
+    this.currentTime = 0;
+    this.play();
+}, false);
+backgroundMusic.play();
+$("#navAudio").click(pauseAudio);
 
 
 var panel = $("#quiz-area");
@@ -14,56 +38,56 @@ var questions = [{
         question: "A term for a group of cats?",
         answers: ["Caggle", "Clowder", "Covey", "Clutch"],
         correctAnswer: "Clowder",
-        image: "assets/images/hand_shake.gif"
+        image: "assets/images/clouder.gif"
     },
 
     {
         question: "A cat has how many whiskers, on average?",
         answers: ["16", "12", "8", "24"],
         correctAnswer: "24",
-        image: "assets/images/dualing_yawn.gif"
+        image: "assets/images/whiskers.gif"
     },
 
     {
         question: "Do cats have fewer or more teeth than dogs ?",
         answers: ["Same", "More", "Fewer"],
         correctAnswer: "Fewer",
-        image: "assets/images/pumping_fist.gif"
+        image: "assets/images/dualing_yawn.gif"
     },
 
     {
         question: "The thick hair around the face of some cats (such as Persians) is called:",
         answers: ["Mane", "Shock", "Ruff", "Pelt"],
         correctAnswer: "Ruff",
-        image: "assets/images/winking.gif"
+        image: "assets/images/ruff.gif"
     },
 
     {
         question: "What is it called when a cat rubs the side of its head on you or on furniture?",
         answers: ["Bunting", "Beaning", "Brocking", "Tagging"],
         correctAnswer: "Bunting",
-        image: "assets/images/pouncing_cat.gif"
+        image: "assets/images/rubbing.gif"
     },
 
     {
         question: "Outdoor-only cats live, on average, about:",
         answers: ["7 to 10 years", "3 - 5 years", "12 - 15 years"],
         correctAnswer: "3 - 5 years",
-        image: "assets/images/dualing_yawn.gif"
+        image: "assets/images/outdoors.gif"
     },
 
     {
         question: "A term for a group of kittens is:",
         answers: ["Nook", "Kaggle", "Kaboodle", "Kindle"],
         correctAnswer: "Kindle",
-        image: "assets/images/cat_hitting_pillow.gif"
+        image: "assets/images/kindle.gif"
     },
 
     {
         question: "A cat, standing in a still position, can jump how many times its own height?",
         answers: ["4", "6", "2", "8"],
         correctAnswer: "6",
-        image: "assets/images/hand_shake.gif"
+        image: "assets/images/jumping.webp"
     },
 
     {
@@ -77,14 +101,14 @@ var questions = [{
         question: "All of the following are the names of cat breeds, except:",
         answers: ["Birman", "Beauceron", "Balinese", "Burmilla"],
         correctAnswer: "Beauceron",
-        image: "assets/images/winking.gif"
+        image: "assets/images/blow_dryer.gif"
     },
 
     {
         question: "Cats can't taste this:",
         answers: ["Bitter", "Sour", "Salt", "Sweet"],
         correctAnswer: "Sweet",
-        image: "assets/images/pouncing_cat.gif"
+        image: "assets/images/taste.gif"
     },
 
     {
@@ -94,7 +118,7 @@ var questions = [{
         "A thumping tail means I am totally frustrated.", 
         "A cat's tail held high means I am happy."],
         correctAnswer: "A tail tucked underneath the body means I am hungery.",
-        image: "assets/images/pumping_fist.gif"
+        image: "assets/images/winking.gif"
     }];
 
 
@@ -119,7 +143,7 @@ var game = {
 
     loadQuestion: function () {
 
-        timer = setInterval(game.countdown, 1000);
+        timer = setInterval(game.countdown, 2000);
 
         panel.html("<h2>" + questions[this.currentQuestion].question + "</h2>");
 
