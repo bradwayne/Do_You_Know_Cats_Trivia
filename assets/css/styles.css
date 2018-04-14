@@ -63,7 +63,7 @@ form {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 25px;
     padding: 5px 45px;
-    margin-top: 275px;
+    margin-top: 310px;
     color: white;
     background: #a01d06;
 }
@@ -98,6 +98,7 @@ img {
     height: 200px;
     border: 2px solid black;
     border-radius: 8px;
+    box-shadow: 0.1em 0.1em 0.03em black;
 }
 
 h1 {
@@ -109,7 +110,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 30px;
     color: #fff;
     text-shadow: 2px 2px black;

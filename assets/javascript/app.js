@@ -117,7 +117,7 @@ var questions = [{
         "A twitching tail means I am getting irritated.", 
         "A thumping tail means I am totally frustrated.", 
         "A cat's tail held high means I am happy."],
-        correctAnswer: "A tail tucked underneath the body means I am hungery.",
+        correctAnswer: "A tail tucked underneath the body means I am hungry.",
         image: "assets/images/winking.gif"
     }];
 
