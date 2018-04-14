@@ -113,7 +113,7 @@ var questions = [{
 
     {
         question: "Which of the following statements about body language is FALSE?",
-        answers: ["A tail tucked underneath the body means I am hungery.",
+        answers: ["A tail tucked underneath the body means I am hungry.",
         "A twitching tail means I am getting irritated.", 
         "A thumping tail means I am totally frustrated.", 
         "A cat's tail held high means I am happy."],
