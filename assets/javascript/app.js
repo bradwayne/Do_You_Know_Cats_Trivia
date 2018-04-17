@@ -108,7 +108,7 @@ var questions = [{
         question: "Cats can't taste this:",
         answers: ["Bitter", "Sour", "Salt", "Sweet"],
         correctAnswer: "Sweet",
-        image: "assets/images/taste.gif"
+        image: "assets/images/tasting.webp"
     },
 
     {
@@ -143,7 +143,7 @@ var game = {
 
     loadQuestion: function () {
 
-        timer = setInterval(game.countdown, 2000);
+        timer = setInterval(game.countdown, 1000);
 
         panel.html("<h2>" + questions[this.currentQuestion].question + "</h2>");
 
@@ -253,6 +253,6 @@ $(document).on("click", ".answer-button", function (e) {
 });
 
 $(document).on("click", "#start", function () {
-    $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>30</span> Seconds</h2>");
+    $("#sub-wrapper").prepend("<h2 id='time'>Time Remaining: <span id='counter-number'>30</span> Seconds</h2>");
     game.loadQuestion();
 });
