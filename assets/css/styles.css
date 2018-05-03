@@ -90,6 +90,14 @@ form {
     background: #a01d06;
 }
 
+#start-over {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 25px;
+    padding: 5px 45px;
+    color: white;
+    background: #a01d06;
+}
+
 #wrapper {
     width: 960px;
     height: 95%;
@@ -156,9 +164,3 @@ h3 {
 button:hover {
     background: #a01d06;
 }
-
-/* @media screen and (max-width: 668px) {
-    #quiz-area {
-        margin-top: 20px;
-    }
-} */

@@ -188,7 +188,7 @@ var game = {
         panel.append("<h3>Correct Answers: " + game.correct + "</h3>");
         panel.append("<h3>Incorrect Answers: " + game.incorrect + "</h3>");
         panel.append("<h3>Unanswered: " + (questions.length - (game.incorrect + game.correct)) + "</h3>");
-        panel.append("<br><button id='start-over'>Start Over?</button>");
+        panel.append("<br><button class='btn' id='start-over'>Start Over ?</button>");
     },
 
     clicked: function (e) {
