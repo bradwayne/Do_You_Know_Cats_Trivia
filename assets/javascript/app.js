@@ -1,18 +1,18 @@
 var backgroundMusic = new Audio("assets/audio/havana_cover_by_cats.m4a");
 
 function pauseAudio() {
-    if (document.getElementById("navAudio").classList.contains('play')) {
-        document.getElementById("navAudio").classList.add('mute');
-        document.getElementById("navAudio").classList.remove('play');
-        document.getElementById("audio_on").style.display = "none";
-        document.getElementById("audio_mute").style.display = "inline";
+    if (document.getElementById('navAudio').classList.contains('play')) {
+        document.getElementById('navAudio').classList.add('mute');
+        document.getElementById('navAudio').classList.remove('play');
+        document.getElementById('audio_on').style.display = 'none';
+        document.getElementById('audio_mute').style.display = 'inline';
         backgroundMusic.pause();
         backgroundMusic.currentTime = 0;
-    } else if (document.getElementById("navAudio").classList.contains('mute')) {
-        document.getElementById("navAudio").classList.add('play');
-        document.getElementById("navAudio").classList.remove('mute');
-        document.getElementById("audio_on").style.display = "inline";
-        document.getElementById("audio_mute").style.display = "none";
+    } else if (document.getElementById('navAudio').classList.contains('mute')) {
+        document.getElementById('navAudio').classList.add('play');
+        document.getElementById('navAudio').classList.remove('mute');
+        document.getElementById('audio_on').style.display = 'inline';
+        document.getElementById('audio_mute').style.display = 'none';
         backgroundMusic.play();
     }
 }
