@@ -206,7 +206,7 @@ var game = {
 
         clearInterval(timer);
 
-        panel.html("<h2>Nope!</h2>");
+        panel.html("<h2>NOPE!</h2>");
         panel.append("<h3>The Correct Answer was: " + questions[game.currentQuestion].correctAnswer + "</h3>");
         panel.append("<img src='" + questions[game.currentQuestion].image + "' />");
 
@@ -223,7 +223,7 @@ var game = {
 
         game.correct++;
 
-        panel.html("<h2>Correct!</h2>");
+        panel.html("<h2>CORRECT!</h2>");
         panel.append("<img src='" + questions[game.currentQuestion].image + "' />");
 
         if (game.currentQuestion === questions.length - 1) {
@@ -253,6 +253,6 @@ $(document).on("click", ".answer-button", function (e) {
 });
 
 $(document).on("click", "#start", function () {
-    $("#sub-wrapper").prepend("<h2 id='time'>Time Remaining: <span id='counter-number'>30</span> Seconds</h2>");
+    $("#sub-wrapper").prepend("<h2 id='time'>Question Time Remaining: <span id='counter-number'>30</span> Seconds</h2>");
     game.loadQuestion();
 });
