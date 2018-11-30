@@ -35,7 +35,7 @@ var questions = [{
     },
 
     {
-        question: "A term for a group of cats?",
+        question: "Term for a group of cats?",
         answers: ["Caggle", "Clowder", "Covey", "Clutch"],
         correctAnswer: "Clowder",
         image: "assets/images/clouder.gif"
@@ -49,21 +49,21 @@ var questions = [{
     },
 
     {
-        question: "Do cats have fewer or more teeth than dogs ?",
-        answers: ["Same", "More", "Fewer"],
+        question: "Do cats have fewer or more teeth than dogs?",
+        answers: ["Fewer", "More"],
         correctAnswer: "Fewer",
         image: "assets/images/dualing_yawn.gif"
     },
 
     {
-        question: "The thick hair around the face of some cats (such as Persians) is called:",
+        question: "Thick hair around the face of some cats (Persians) is called:",
         answers: ["Mane", "Shock", "Ruff", "Pelt"],
         correctAnswer: "Ruff",
         image: "assets/images/ruff.gif"
     },
 
     {
-        question: "What is it called when a cat rubs the side of its head on you or on furniture?",
+        question: "A cat rubbing the side of its head on you or furniture is called:",
         answers: ["Bunting", "Beaning", "Brocking", "Tagging"],
         correctAnswer: "Bunting",
         image: "assets/images/rubbing.gif"
@@ -77,28 +77,28 @@ var questions = [{
     },
 
     {
-        question: "A term for a group of kittens is:",
-        answers: ["Nook", "Kaggle", "Kaboodle", "Kindle"],
-        correctAnswer: "Kindle",
-        image: "assets/images/kindle.gif"
-    },
-
-    {
-        question: "A cat, standing in a still position, can jump how many times its own height?",
-        answers: ["4", "6", "2", "8"],
-        correctAnswer: "6",
-        image: "assets/images/jumping.webp"
-    },
-
-    {
-        question: "'Tabby' is the name of a breed.",
+        question: "'Tabby' is a name of a breed.",
         answers: ["False", "True"],
         correctAnswer: "False",
         image: "assets/images/pumping_fist.gif"
     },
 
     {
-        question: "All of the following are the names of cat breeds, except:",
+        question: "Term for a group of kittens is called:",
+        answers: ["Nook", "Kaggle", "Kaboodle", "Kindle"],
+        correctAnswer: "Kindle",
+        image: "assets/images/kindle.gif"
+    },
+
+    {
+        question: "A cat can jump how many times its height?",
+        answers: ["4", "6", "2", "8"],
+        correctAnswer: "6",
+        image: "assets/images/jumping.webp"
+    },
+
+    {
+        question: "All are names of cat breeds, except:",
         answers: ["Birman", "Beauceron", "Balinese", "Burmilla"],
         correctAnswer: "Beauceron",
         image: "assets/images/blow_dryer.gif"
@@ -112,12 +112,12 @@ var questions = [{
     },
 
     {
-        question: "Which of the following statements about body language is FALSE?",
-        answers: ["A tail tucked underneath the body means I am hungry.",
-        "A twitching tail means I am getting irritated.", 
-        "A thumping tail means I am totally frustrated.", 
-        "A cat's tail held high means I am happy."],
-        correctAnswer: "A tail tucked underneath the body means I am hungry.",
+        question: "Which statements about cat body language is FALSE?",
+        answers: ["A tail tucked underneath body means I am hungry.",
+        "A tail twitching means I am getting irritated.",
+        "A tail thumping means I am totally frustrated.",
+        "A tail held high means I am happy."],
+        correctAnswer: "A tail tucked underneath body means I am hungry.",
         image: "assets/images/winking.gif"
     }];
 
