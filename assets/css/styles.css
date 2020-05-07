@@ -18,11 +18,14 @@ body {
 .background-image {
     position: fixed;
     background-image: url(..//images/catmoon.jpg);
-    background-size: 980px;
-    height: 600px;
-    width: 960px;
-    margin-top: -20px;
+    /* background-size: 980px; */
+    height: 100%;
+    width: 100%;
+    margin-top: 70px;
     z-index: -50;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .head-box {

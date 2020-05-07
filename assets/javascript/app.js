@@ -118,6 +118,7 @@ var questions = [{
         correctAnswer: "I am getting irritated.",
         image: "assets/images/winking.gif"
     }
+
 ];
 
 
